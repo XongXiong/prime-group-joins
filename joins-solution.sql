@@ -40,6 +40,11 @@ FROM "customers";
 SELECT SUM(wp."on_hand")
 FROM "warehouse_product" wp;
 
+--OR
+
+SELECT COUNT(*)
+FROM "products";
+
 --8. What is the total available on-hand quantity of diet pepsi?
 SELECT SUM(wp."on_hand")
 FROM "warehouse_product" wp
